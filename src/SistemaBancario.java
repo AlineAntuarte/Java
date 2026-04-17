@@ -1,5 +1,4 @@
 
-
 import java.util.List;
 import java.util.Scanner;
 
@@ -61,10 +60,10 @@ public class SistemaBancario {
                     leia.nextLine();
 
                     if (valorSaque > conta.verificarSaldo()) {
-                        System.out.println("Saldo insuficiente!");
+                        System.out.println("Saldo insuficiente, ô pobreza miserável que nois ta");
                     } else {
                         conta.sacar(valorSaque);
-                        System.out.printf("Saque de R$ %.2f realizado com sucesso!%n", valorSaque);
+                        System.out.printf("Saque de R$ %.2f realizado, cheio de grana hein fi!%n", valorSaque);
                     }
                     break;
                 case 3:
@@ -73,7 +72,7 @@ public class SistemaBancario {
                     leia.nextLine();
 
                     conta.depositar(valorDeposito);
-                    System.out.printf("Depósito de R$ %.2f realizado com sucesso!%n", valorDeposito);
+                    System.out.printf("Depósito de R$ %.2f realizado com sucesso, amou?%n", valorDeposito);
                     break;
 
                 case 4:
@@ -81,7 +80,7 @@ public class SistemaBancario {
                     break;
 
                 default:
-                    System.out.println("Opção inválida!");
+                    System.out.println("Opção inválida/Maior caô");
                     break;
             }
 
